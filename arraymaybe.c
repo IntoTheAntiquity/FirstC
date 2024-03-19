@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 #define N 100 // Define the size of the array 'a'
+/*
+ * Made a little cchange to see where it goes
+ */
 
 int main() {
     int a[N]; // Declare an array 'a' of size N
