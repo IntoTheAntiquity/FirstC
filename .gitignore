@@ -1,0 +1,7 @@
+echo "# Ignore files temporarily until needed again" > .gitignore
+
+# Ignored files temporarily until needed again
+CinVisual
+InputOutput
+InputOutput.c
+VimInfo.sh
