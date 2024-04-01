@@ -54,6 +54,22 @@ int main() {
         printf("No, sorry try again.Enter your guess: ");
         scanf("%d", &guess);
     }
+
+
+    today (4/1/24)
+
+    // Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+
+int x = 6, y = 3;
+
+ 
+ printf("%d %% %d divides equally so it has no remainder = %d\n", x, y, x % y);
+
+    return 0;
+}
     
     printf("You got it !!\n");
     
