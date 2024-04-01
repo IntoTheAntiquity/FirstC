@@ -50,7 +50,7 @@ int main() {
     printf(" This is the sum: %d Can you guess the secret number absed of the answer?: ",sum);
     scanf("%i", &guess);
     
-    while (sum != guess) {
+    while (secret != guess) {
         printf("No, sorry try again.Enter your guess: ");
         scanf("%d", &guess);
     }
