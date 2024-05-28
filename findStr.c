@@ -4,6 +4,8 @@
 #define MAX_LENGTH 20
 #define FOUR_LETTERS 4
 
+//hello find me
+
 int main() {
     char smallest_word[MAX_LENGTH + 1]; // +1 for null terminator
     char largest_word[MAX_LENGTH + 1];
