@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void listLetterFreq(FILE *file) {
+    int freq[ALPHABET_SIZE * 2] = {0}; // Array to store frequency of each letter (both lowercase and uppercase)
+    char c;
+
+    // Iterate through the file character by character
+    while ((c = fgetc(file)) != EOF) {
+        // Check if the character is an alphabet letter
+        if (isalpha(c)) {
+            // Convert the character to lowercase
+            c = tolower(c);
+            
+            // Increment the frequency of the corresponding letter
+            freq[c - 'a']++;
+        }
+    }
+
+    // Print the frequencies
+    printf("Letter frequencies:\n");
+    for (int i = 0; i < ALPHABET_SIZE; i++) {
+        printf("Letter %c or %c appears %d time(s)\n", 'a' + i, 'A' + i, freq[i] + freq[i + ALPHABET_SIZE]);
+    }
+}
+
+int main() {
+    FILE *file = stdin; // Input from stdin (standard input)
+
+    listLetterFreq(file);
+
+    return 0;
+}
